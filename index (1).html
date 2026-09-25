@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adroguett · Datos que funcionan solos</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Alfonso Droguett<span class="accent">.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#proceso">Proceso</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="https://blog.adroguett.com" target="_blank" class="nav-blog">Blog <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1.5 8.5L8.5 1.5M8.5 1.5H3M8.5 1.5V7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="container">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Disponible para proyectos
+      </div>
+      <h1 class="hero-title">
+        Construyo sistemas de datos<br />
+        <span class="title-dim">que funcionan solos</span>
+      </h1>
+      <p class="hero-sub">Automatización · Python · SQL · Pipelines</p>
+      <p class="hero-desc">
+        Diseño infraestructuras de datos que capturan, procesan y actualizan información de forma continua, sin intervención manual.
+      </p>
+      <div class="hero-actions">
+        <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+        <a href="#contacto" class="btn btn-ghost">Contactar</a>
+      </div>
+      <div class="hero-stack">
+        <span class="stack-tag">Python</span>
+        <span class="stack-sep">/</span>
+        <span class="stack-tag">SQL</span>
+        <span class="stack-sep">/</span>
+        <span class="stack-tag">GitHub Actions</span>
+        <span class="stack-sep">/</span>
+        <span class="stack-tag">Scrapy</span>
+        <span class="stack-sep">/</span>
+        <span class="stack-tag">Power BI</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="section" id="servicios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">01 · Servicios</span>
+        <h2 class="section-title">Qué construyo</h2>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3 class="service-title">Automatización de datos</h3>
+          <p class="service-desc">
+            Pipelines que extraen, limpian y almacenan datos de forma automática. Scraping web, APIs y fuentes estructuradas. Orquestados con GitHub Actions o cron.
+          </p>
+          <ul class="service-tags">
+            <li>Web scraping</li>
+            <li>ETL pipelines</li>
+            <li>CI/CD con GitHub Actions</li>
+            <li>Almacenamiento en la nube</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <h3 class="service-title">Análisis de datos</h3>
+          <p class="service-desc">
+            Análisis con Python y SQL sobre datos reales, no datasets de práctica. Exploración, validación de hipótesis y extracción de conclusiones accionables.
+          </p>
+          <ul class="service-tags">
+            <li>Pandas / NumPy</li>
+            <li>SQL avanzado</li>
+            <li>Análisis exploratorio</li>
+            <li>Reportes reproducibles</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          </div>
+          <h3 class="service-title">Dashboards conectados</h3>
+          <p class="service-desc">
+            Visualizaciones que se actualizan solas porque están conectadas a datos reales. No capturas estáticas. Construidos en Power BI o Streamlit.
+          </p>
+          <ul class="service-tags">
+            <li>Power BI</li>
+            <li>Streamlit</li>
+            <li>Datos en tiempo real</li>
+            <li>Deployable en la nube</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section class="section section-alt" id="proyectos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">02 · Proyectos</span>
+        <h2 class="section-title">Sistemas construidos</h2>
+      </div>
+      <div class="projects-list">
+
+<article class="project-card">
+  <div class="project-meta">
+    <span class="project-num">01</span>
+    <div class="project-badges">
+      <span class="badge">Python</span>
+      <span class="badge">GitHub Actions</span>
+      <span class="badge">YouTube API</span>
+      <span class="badge">Streamlit</span>
+      <span class="badge">AI</span>
+    </div>
+  </div>
+  <div class="project-content">
+    <h3 class="project-title">YouTube Charts Intelligence Pipeline</h3>
+    <div class="project-row">
+      <div class="project-block">
+        <span class="block-label">Problema</span>
+        <p>No existía forma automatizada de extraer, enriquecer y analizar históricamente los charts musicales semanales de YouTube.</p>
+      </div>
+      <div class="project-block">
+        <span class="block-label">Solución</span>
+        <p>Pipeline ETL de 5 etapas que descarga, enriquece con IA y geolocalización, genera notebooks bilingües y archiva en Google Drive.</p>
+      </div>
+      <div class="project-block">
+        <span class="block-label">Resultado</span>
+        <p>Base de datos histórica actualizada semanalmente con 25+ campos por canción. Notebooks automáticos con IA. Dashboard interactivo.</p>
+      </div>
+    </div>
+    <div class="project-links">
+      <a href="https://github.com/adroguetth/Music-Charts-Intelligence" target="_blank" class="project-link">
+        Ver repositorio
+        <svg width="13" height="13" viewBox="0 0 10 10" fill="none"><path d="M1.5 8.5L8.5 1.5M8.5 1.5H3M8.5 1.5V7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <br>
+      <a href="https://drive.google.com/drive/folders/1RpfyGHsIY5MThE1bfe0Rc3gk03WoYzpR" target="_blank" class="project-link">
+        Ver notebooks
+        <svg width="13" height="13" viewBox="0 0 10 10" fill="none"><path d="M1.5 8.5L8.5 1.5M8.5 1.5H3M8.5 1.5V7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <br>
+      <a href="#" target="_blank" class="project-link">
+        Ver dashboard
+        <svg width="13" height="13" viewBox="0 0 10 10" fill="none"><path d="M1.5 8.5L8.5 1.5M8.5 1.5H3M8.5 1.5V7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</article>
+
+        <article class="project-card">
+          <div class="project-meta">
+            <span class="project-num">02</span>
+            <div class="project-badges">
+              <span class="badge">Python</span>
+              <span class="badge">SQL</span>
+              <span class="badge">Pandas</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Análisis electoral Chile</h3>
+            <div class="project-row">
+              <div class="project-block">
+                <span class="block-label">Problema</span>
+                <p>Los datos electorales públicos estaban fragmentados en múltiples archivos sin estructura consistente, dificultando análisis históricos comparativos.</p>
+              </div>
+              <div class="project-block">
+                <span class="block-label">Solución</span>
+                <p>Proceso de extracción, normalización y consolidación de datos electorales de múltiples elecciones. Modelo relacional en SQL para consultas flexibles.</p>
+              </div>
+              <div class="project-block">
+                <span class="block-label">Resultado</span>
+                <p>Base de datos unificada con datos de varias elecciones. Análisis de distribución de votos, participación y tendencias por región y comuna.</p>
+              </div>
+            </div>
+            <a href="https://github.com" target="_blank" class="project-link">
+              Ver repositorio
+              <svg width="13" height="13" viewBox="0 0 10 10" fill="none"><path d="M1.5 8.5L8.5 1.5M8.5 1.5H3M8.5 1.5V7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-meta">
+            <span class="project-num">03</span>
+            <div class="project-badges">
+              <span class="badge">Scrapy</span>
+              <span class="badge">GitHub Actions</span>
+              <span class="badge">Streamlit</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Scraper de precios retail</h3>
+            <div class="project-row">
+              <div class="project-block">
+                <span class="block-label">Problema</span>
+                <p>Seguimiento manual de precios en e-commerce es inviable a escala. No había visibilidad histórica de fluctuaciones ni alertas automáticas.</p>
+              </div>
+              <div class="project-block">
+                <span class="block-label">Solución</span>
+                <p>Spider con Scrapy que recorre categorías de productos, extrae precios y los almacena con timestamp. Ejecutado en horario fijo vía GitHub Actions.</p>
+              </div>
+              <div class="project-block">
+                <span class="block-label">Resultado</span>
+                <p>Histórico de precios con granularidad diaria. Dashboard en Streamlit para visualizar tendencias. Alertas cuando un precio cae por debajo de umbral.</p>
+              </div>
+            </div>
+            <a href="https://github.com" target="_blank" class="project-link">
+              Ver repositorio
+              <svg width="13" height="13" viewBox="0 0 10 10" fill="none"><path d="M1.5 8.5L8.5 1.5M8.5 1.5H3M8.5 1.5V7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ENFOQUE -->
+  <section class="section enfoque-section" id="enfoque">
+    <div class="container">
+      <div class="enfoque-inner">
+        <div class="enfoque-line"></div>
+        <blockquote class="enfoque-quote">
+          No trabajo con datasets estáticos.<br />
+          Diseño sistemas que capturan, procesan<br />
+          y mantienen datos <em>en el tiempo</em>.
+        </blockquote>
+        <p class="enfoque-sub">La diferencia entre un análisis y un sistema de datos es que uno caduca y el otro no.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPETENCIAS -->
+  <section class="section" id="competencias">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">03 · Stack</span>
+        <h2 class="section-title">Competencias técnicas</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <span class="skill-category">Lenguajes</span>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-dot"></span>Python</div>
+            <div class="skill-item"><span class="skill-dot"></span>SQL</div>
+            <div class="skill-item"><span class="skill-dot"></span>Bash</div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="skill-category">Extracción</span>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-dot"></span>Scrapy</div>
+            <div class="skill-item"><span class="skill-dot"></span>BeautifulSoup</div>
+            <div class="skill-item"><span class="skill-dot"></span>APIs REST</div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="skill-category">Automatización</span>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-dot"></span>GitHub Actions</div>
+            <div class="skill-item"><span class="skill-dot"></span>Cron jobs</div>
+            <div class="skill-item"><span class="skill-dot"></span>Docker</div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="skill-category">Análisis</span>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-dot"></span>Pandas / NumPy</div>
+            <div class="skill-item"><span class="skill-dot"></span>PostgreSQL</div>
+            <div class="skill-item"><span class="skill-dot"></span>Jupyter</div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="skill-category">Visualización</span>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-dot"></span>Power BI</div>
+            <div class="skill-item"><span class="skill-dot"></span>Streamlit</div>
+            <div class="skill-item"><span class="skill-dot"></span>Matplotlib</div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="skill-category">Infraestructura</span>
+          <div class="skill-items">
+            <div class="skill-item"><span class="skill-dot"></span>Git / GitHub</div>
+            <div class="skill-item"><span class="skill-dot"></span>GitHub Pages</div>
+            <div class="skill-item"><span class="skill-dot"></span>Cloud Storage</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section class="section section-alt" id="proceso">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">04 · Proceso</span>
+        <h2 class="section-title">Cómo trabajo</h2>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <h3 class="step-title">Entender el problema</h3>
+            <p class="step-desc">Antes de escribir código, identifico qué pregunta se quiere responder y qué decisión depende de esa respuesta. Sin claridad en esto, cualquier pipeline es desperdicio.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <h3 class="step-title">Identificar fuentes de datos</h3>
+            <p class="step-desc">Mapeo las fuentes disponibles: APIs públicas, sitios scrapeables, archivos descargables, bases de datos internas. Evalúo calidad, frecuencia de actualización y restricciones legales.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <h3 class="step-title">Construir el pipeline automatizado</h3>
+            <p class="step-desc">Desarrollo el sistema de extracción, transformación y carga. Lo conecto a GitHub Actions o equivalente para que corra sin intervención. Pruebas y manejo de errores incluidos.</p>
+          </div>
+        </div>
+        <div class="process-connector"></div>
+        <div class="process-step">
+          <div class="step-num">04</div>
+          <div class="step-content">
+            <h3 class="step-title">Entregar sistema + documentación</h3>
+            <p class="step-desc">Entrego el sistema funcionando con documentación para operar, modificar y extenderlo. No entrego código que solo yo puedo mantener.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section" id="contacto">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">05 · Contacto</span>
+        <h2 class="section-title">Trabajemos juntos</h2>
+      </div>
+      <div class="contact-inner">
+        <p class="contact-desc">
+          Si tienes un problema de datos —estructurado o no— y quieres saber si tiene solución automatizable, escríbeme. Sin compromiso.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:adroguett.consultor@gmail.com" class="contact-item contact-email">
+            <div class="contact-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <span class="contact-label">Email</span>
+              <span class="contact-value">adroguett.consultor@gmail.com</span>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/adroguett" target="_blank" class="contact-item">
+            <div class="contact-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">linkedin.com/in/adroguett</span>
+            </div>
+          </a>
+          <a href="https://github.com/adroguett" target="_blank" class="contact-item">
+            <div class="contact-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </div>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">github.com/adroguett</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">Alfonso Droguett<span class="accent">.</span></span>
+        <span class="footer-copy">Automatización · Datos · Chile</span>
+        <a href="https://blog.adroguett.com" target="_blank" class="footer-blog">Blog →</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
