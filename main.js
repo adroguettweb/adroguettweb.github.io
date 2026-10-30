@@ -19,13 +19,15 @@ const navToggle = document.getElementById('navToggle');
 const navLinks  = document.getElementById('navLinks');
 
 navToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
+  const isOpen = navLinks.classList.toggle('open');
+  navToggle.setAttribute('aria-expanded', isOpen);
 });
 
 // Close mobile nav when a link is clicked
 navLinks.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
     navLinks.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
   });
 });
 
@@ -40,9 +42,10 @@ const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry, i) => {
       if (entry.isIntersecting) {
+        const delay = Number(entry.target.dataset.delay) || 0;
         setTimeout(() => {
           entry.target.classList.add('visible');
-        }, 60 * (entry.target.dataset.delay || 0));
+        }, 60 * delay);
         observer.unobserve(entry.target);
       }
     });
@@ -51,7 +54,7 @@ const observer = new IntersectionObserver(
 );
 
 fadeTargets.forEach((el, i) => {
-  el.dataset.delay = i % 4;
+  el.dataset.delay = String(i % 4);
   observer.observe(el);
 });
 
@@ -65,9 +68,7 @@ const sectionObserver = new IntersectionObserver(
       if (entry.isIntersecting) {
         const id = entry.target.getAttribute('id');
         navAnchors.forEach(a => {
-          a.style.color = a.getAttribute('href') === `#${id}`
-            ? 'var(--text)'
-            : '';
+          a.classList.toggle('active', a.getAttribute('href') === `#${id}`);
         });
       }
     });
